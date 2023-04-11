@@ -33,9 +33,4 @@ Em seu acervo a biblioteca recebe diariamente em média 2 mil usuários e realiz
 
 # Descrição da proposta
 
-Tenha em mente que essa é uma etapa relativamente breve. Não é necessário um texto gigantesco, apenas dar uma noção do funcionamento do sistema. Mais adiante
-precisaremos ser bem detalhistas, todavia agora a intenção é apenas fazer algo que permita ao cliente nos dizer se estamos no caminho certo.
-
-// 
-
 A BPP não possui sistema onde cada material é catalogado em um sistema de gerenciamento, que ajuda a gerenciar o empréstimo, devolução, reserva e inventário dos materiais. Nem oferece serviços como empréstimo de materiais, renovação de empréstimos, reservas e acesso a esses recursos online. Nesse primeiro momento os livros são o objeto piloto do sistema, pela sua corriqueira usabilidade. Com um sistema prático haverá um aumento no número de empréstimos e agilidade no serviço dos atendentes, funcionando da seguinte forma: ao usuário informar o livro cujo deseja realizar o empréstimo o bibliotecário consulta o sistema e verifica se o título está disponível para que, então se registre o empréstimo. Caso o título não esteja disponível, o bibliotecário registra um pedido de reserva do livro e informa ao usuário a data prevista de disponibilidade. Quando o empréstimo for realizado o bibliotecário informa ao usuário a data de devolução que será automaticamente prevista pelo sistema. Quando ocorrer a devolução de um título o bibliotecário verifica se houve atraso na devolução, se o livro foi devolvido dentro do prazo o bibliotecário registra no sistema, já se o livro foi devolvido com atraso é calculado a multa e registrado a devolução no sistema. Com a devolução, o sistema também irá atualizar o status do título, permitindo a geração de relatórios de empréstimos, devoluções e reservas para facilitar o controle de gestão da biblioteca.
