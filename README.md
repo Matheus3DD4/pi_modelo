@@ -45,4 +45,16 @@ A BPP não possui sistema onde cada material é catalogado em um sistema de gere
 
 **RN05 - Catalogação de livros:** O sistema deve permitir que o bibliotecário faça atualizações diárias de todo o acervo literário.
 
-**RN06 - Controle de estoque:** O sistema deve permitir o parâmetro dos livros na biblioteca.
+**RN06 - Controle de estoque:** O sistema deve permitir o parâmetro dos livros presentes na biblioteca.
+
+
+# 5. Requisitos funcionais
+
+**Entradas:**
+- **R.F. 01 - Cadastro de usuários:** O sistema terá uma interface onde ocorrerá o cadastro de novos usuários.
+  - **Dados necessários:** Nome completo, CPF, número de telefone, e-mail, senha e login.
+  - **Usuários:** apenas os novos usuário.
+
+- **R.F. 02 - Autenticação de usuário:** Tem como funcionalidade autenticar o acesso ao sistema, verificando se o usuário pode acessa-lo, caso possa, o direcionando para o a página principal de seu perfil de acesso.
+  - **Dados necessários:** Login, senha, nível de permissão. 
+  - **Usuários:** todos os níveis de usuário.
