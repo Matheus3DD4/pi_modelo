@@ -78,27 +78,25 @@ A BPP não possui sistema onde cada material é catalogado em um sistema de gere
   - **Dados Necessários:** Nome/Login, senha.
   - **Usuários:** bibliotecário.
 
-- **R.F 07 - :**
-
 **Saída**
 
-**R.F 08: Relatório de Empréstimo:** O sistema deve permitir emitir os relatórios de empréstimos de livros e quantidade emprestada.
+**R.F 07: Relatório de Empréstimo:** O sistema deve permitir emitir os relatórios de empréstimos de livros e quantidade emprestada.
   - **Dados Necessários:** data inicial, data final 
   - **Usuários:** bibliotecário
 
-**R.F 09: Relatório de Empréstimos Atrasados:** O sistema deve permitir emitir os relatórios de empréstimos de livros atrasados e quantidade emprestada,  
+**R.F 08: Relatório de Empréstimos Atrasados:** O sistema deve permitir emitir os relatórios de empréstimos de livros atrasados e quantidade emprestada,  
   - **Dados Necessários:** data inicial, data final. 
   - **Usuários:** bibliotecário.
 
-**R.F 10: Relatório de Clientes:** O sistema deve permitir emitir os relatórios dos usuários, fazendo a verificação das pendências para a validação de empréstimos.
+**R.F 09: Relatório de Clientes:** O sistema deve permitir emitir os relatórios dos usuários, fazendo a verificação das pendências para a validação de empréstimos.
   - **Dados Necessários:** Nome completo.
   - **Usuários:** bibliotecário.
 
 # Requisitos não funcionais
 
-- **R.F. 01 - Software em Processamento** O sistema faz parte de um ambiente interno e será utilizado de acordo com as horas de trabalho da biblioteca, estando ativo 16 horas por dia, durante os dias úteis da semana.
+- **R.F. 01 - Software em Processamento:** O sistema faz parte de um ambiente interno e será utilizado de acordo com as horas de trabalho da biblioteca, estando ativo 16 horas por dia, durante os dias úteis da semana.
 
-- **R.F. 02 - Autenticação** Para realizar o acesso ao sistema é necessário ter um usuário de autenticação criado pelo administrador, além da possibilidade de solicitar um envio de redefinição de senha.
+- **R.F. 02 - Autenticação:** Para realizar o acesso ao sistema é necessário ter um usuário de autenticação criado pelo administrador, além da possibilidade de solicitar um envio de redefinição de senha.
 
 - **R.F. 03 - Aviso de empréstimo:** O sistema deve avisar o usuário que tem empréstimos em aberto 1(um) dia antes do vencimento.
 
