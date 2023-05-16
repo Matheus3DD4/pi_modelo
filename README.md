@@ -50,7 +50,7 @@ A BPP não possui sistema onde cada material é catalogado em um sistema de gere
 
 # Requisitos funcionais
 
-**Entradas:**
+**Entradas**
 - **R.F. 01 - Cadastro de Leitores:** O sistema terá uma interface onde ocorrerá o cadastro de novos usuários.
   - **Dados necessários:** Nome completo, CPF, número de telefone, e-mail, senha e login.
   - **Usuários:** bibliotecário/novos funcionários.
