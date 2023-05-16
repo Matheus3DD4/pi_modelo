@@ -35,7 +35,7 @@ A BPP não possui sistema onde cada material é catalogado em um sistema de gere
 
 **Regras de Negócio**
 
-**RN01 - Cadastro de Leitores:** Os funcionários precisam fazer o cadastro do usuário para o tal poder realizar empréstimos.
+**RN01 - Cadastro de Leitores:** Os funcionários precisam fazer o cadastro do usuário para que o tal poder realizar empréstimos.
 
 **RN02 - Realizar Empréstimo:** Para realizar o empréstimo é preciso que o usuário seja cadastrado e não tenha nenhuma multa pendente.
 
@@ -48,13 +48,62 @@ A BPP não possui sistema onde cada material é catalogado em um sistema de gere
 **RN06 - Controle de estoque:** O sistema deve permitir o parâmetro dos livros presentes na biblioteca.
 
 
-# 5. Requisitos funcionais
+# Requisitos funcionais
 
 **Entradas:**
-- **R.F. 01 - Cadastro de usuários:** O sistema terá uma interface onde ocorrerá o cadastro de novos usuários.
+- **R.F. 01 - Cadastro de Leitores:** O sistema terá uma interface onde ocorrerá o cadastro de novos usuários.
   - **Dados necessários:** Nome completo, CPF, número de telefone, e-mail, senha e login.
-  - **Usuários:** apenas os novos usuário.
+  - **Usuários:** bibliotecário/novos funcionários.
 
-- **R.F. 02 - Autenticação de usuário:** Tem como funcionalidade autenticar o acesso ao sistema, verificando se o usuário pode acessa-lo, caso possa, o direcionando para o a página principal de seu perfil de acesso.
-  - **Dados necessários:** Login, senha, nível de permissão. 
-  - **Usuários:** todos os níveis de usuário.
+- **R.F. 02 - Acesso de Usuário:** O sistema permitirá o funcionário verificar se o usuário pode acessar, caso possa, poderá analisar sua situação e realizar empréstimos. 
+  - **Dados necessários:** Nome/Login, senha, nível de permissão. 
+  - **Usuários:** bibliotecário.
+
+- **R.F. 03 - Autenticação de Devolução:** Não é necessário cadastro para devolução.
+  - **Dados necessários:** Nome/Login, senha, nível de permissão. 
+  - **Usuários:** bibliotecário.
+
+
+**Processamentos**
+
+- **R.F 04 - Devolução do Livro:** O sistema deve permitir verificar se há atrasos após a devolução.
+  - **Dados Necessários:** nenhum
+  - **Usuários:** bibliotecário.
+
+- **R.F 05 - Empréstimo do Livro:** O sistema deve permitir verificar se há pendências para a validação de empréstimos.
+  - **Dados Necessários:** Nome completo, e-mail, Telefone, CPF, Endereço.
+  - **Usuários:** bibliotecário.
+
+- **R.F 06 - Catalogação Diária de Livros:** O sistema deve permitir que o bibliotecário faça atualizações dos livros (re)adicionados ao acervo literário no dia.
+  - **Dados Necessários:** Nome/Login, senha.
+  - **Usuários:** bibliotecário.
+
+- **R.F 07 - :**
+
+**Saída**
+
+**R.F 08: Relatório de Empréstimo:** O sistema deve permitir emitir os relatórios de empréstimos de livros e quantidade emprestada.
+  - **Dados Necessários:** data inicial, data final 
+  - **Usuários:** bibliotecário
+
+**R.F 09: Relatório de Empréstimos Atrasados:** O sistema deve permitir emitir os relatórios de empréstimos de livros atrasados e quantidade emprestada,  
+  - **Dados Necessários:** data inicial, data final. 
+  - **Usuários:** bibliotecário.
+
+**R.F 10: Relatório de Clientes:** O sistema deve permitir emitir os relatórios dos usuários, fazendo a verificação das pendências para a validação de empréstimos.
+  - **Dados Necessários:** Nome completo.
+  - **Usuários:** bibliotecário.
+
+# Requisitos não funcionais
+
+- **R.F. 01 - Software em Processamento** O sistema faz parte de um ambiente interno e será utilizado de acordo com as horas de trabalho da biblioteca, estando ativo 16 horas por dia, durante os dias úteis da semana.
+
+- **R.F. 02 - Autenticação** Para realizar o acesso ao sistema é necessário ter um usuário de autenticação criado pelo administrador, além da possibilidade de solicitar um envio de redefinição de senha.
+
+- **R.F. 03 - Aviso de empréstimo:** O sistema deve avisar o usuário que tem empréstimos em aberto 1(um) dia antes do vencimento.
+
+- **R.F. 04 - Limitação de empréstimo:** O sistema deve limitar um número de empréstimos para cada usuário a depender do tempo de cadastro na BPP.
+
+- **R.F. 06 - Tecnologia Front-end:** Para a exibição em front-end, o software utilizará o CSS3 e o HTML5, além das bibliotecas de Vue.
+
+- **R.F. 07 - Tecnologia Back-end:**  O software será desenvolvido pela linguagem de programação Django.
