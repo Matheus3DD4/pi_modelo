@@ -80,15 +80,15 @@ A BPP não possui sistema onde cada material é catalogado em um sistema de gere
 
 **Saída**
 
-**R.F 07: Relatório de Empréstimo:** O sistema deve permitir emitir os relatórios de empréstimos de livros e quantidade emprestada.
+- **R.F 07: Relatório de Empréstimo:** O sistema deve permitir emitir os relatórios de empréstimos de livros e quantidade emprestada.
   - **Dados Necessários:** data inicial, data final 
   - **Usuários:** bibliotecário
 
-**R.F 08: Relatório de Empréstimos Atrasados:** O sistema deve permitir emitir os relatórios de empréstimos de livros atrasados e quantidade emprestada,  
+- **R.F 08: Relatório de Empréstimos Atrasados:** O sistema deve permitir emitir os relatórios de empréstimos de livros atrasados e quantidade emprestada,  
   - **Dados Necessários:** data inicial, data final. 
   - **Usuários:** bibliotecário.
 
-**R.F 09: Relatório de Clientes:** O sistema deve permitir emitir os relatórios dos usuários, fazendo a verificação das pendências para a validação de empréstimos.
+- **R.F 09: Relatório de Clientes:** O sistema deve permitir emitir os relatórios dos usuários, fazendo a verificação das pendências para a validação de empréstimos.
   - **Dados Necessários:** Nome completo.
   - **Usuários:** bibliotecário.
 
