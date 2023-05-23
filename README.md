@@ -5,7 +5,7 @@ Um modelo para o desenvolvimento do Projeto Integrador do Curso de Técnico em D
 Professores: [Marco André Mendes](github.com/marcoandre) e [Alann Perini](https://github.com/AlannKPerini).
 
 **Equipe:**
-- [Matheus Marques Gobetti, Ana Laura de Paiva](github.com/Matheus3DD4)
+- [Matheus Marques Gobetti, Ana Laura de Paiva, Thiago de Paula](github.com/Matheus3DD4)
 
 # Como usar esse modelo para o Projeto Integrador
 
