@@ -5,7 +5,7 @@ Um modelo para o desenvolvimento do Projeto Integrador do Curso de Técnico em D
 Professores: [Marco André Mendes](github.com/marcoandre) e [Alann Perini](https://github.com/AlannKPerini).
 
 **Equipe:**
-- [Matheus Marques Gobetti,](github.com/Matheus3DD4) [Ana Laura de Paiva,](https://github.com/analauracpaiva) e [Thiago de Paula](https://github.com/thigasmonteiro)
+- [Matheus Marques Gobetti,](github.com/Matheus3DD4) [Ana Laura de Paiva](https://github.com/analauracpaiva) e [Thiago de Paula](https://github.com/thigasmonteiro)
   
 # Situação Problema
 
@@ -23,60 +23,48 @@ A BPP não oferece esses serviços como: empréstimo de materiais, renovação d
 
 **Regras de Negócio**
 
-**RN01 - Cadastro de Leitores:** Os funcionários precisam fazer o cadastro do usuário para que o tal poder realizar empréstimos.
+**RN01 - Cadastro de Leitores:** Os funcionários precisam fazer o cadastro do usuário na biblioteca antes para que o tal poder realizar empréstimos.
 
 **RN02 - Realizar Empréstimo:** Para realizar o empréstimo é preciso que o usuário seja cadastrado e não tenha nenhuma multa pendente.
 
-**RN03 - Registro de Empréstimo:** O bibliotecário deverá ter acesso a registros de empréstimosde todos os usuários. O sistema deve permitir que o bibliotecário tenha acesso aos registros de empréstimos.
+**RN03 - Registro de Empréstimo:** O usuário deverá ter acesso aos registros de seus empréstimos. 
 
 **RN04 - Pagamento de Multa:** O usuário que ultrapassar 15 dias da data de devolução do livro deverá pagar a multa de acordo com os dias de atraso como listado na tabela padrão da BPP.
 
-**RN05 - Catalogação de livros:** O sistema deve permitir que o bibliotecário faça atualizações diárias de todo o acervo literário.
-
-**RN06 - Controle de estoque:** O sistema deve permitir o parâmetro dos livros presentes na biblioteca.
-
+**RN05 - Status de livros:** O sistema deve permitir que o usuário tenha atualizações diárias de seu status literário.
 
 # Requisitos funcionais
 
 **Entradas**
 - **R.F. 01 - Cadastro de Leitores:** O sistema terá uma interface onde ocorrerá o cadastro de novos usuários.
-  - **Dados necessários:** Nome completo, CPF, número de telefone, e-mail, senha e login.
-  - **Usuários:** bibliotecário/novos funcionários.
+  - **Dados necessários:** Nome completo, CPF, e-mail, senha e login.
+  - **Usuários:** Novos usuários.
 
-- **R.F. 02 - Acesso de Usuário:** O sistema permitirá o funcionário verificar se o usuário pode acessar, caso possa, poderá analisar sua situação e realizar empréstimos. 
+- **R.F. 02 - Acesso de Usuário:** O sistema permitirá o usuário analisar sua situação e realizar empréstimos. 
   - **Dados necessários:** Nome/Login, senha, nível de permissão. 
-  - **Usuários:** bibliotecário.
-
-- **R.F. 03 - Autenticação de Devolução:** Não é necessário cadastro para devolução.
-  - **Dados necessários:** Nome/Login, senha, nível de permissão. 
-  - **Usuários:** bibliotecário.
-
+  - **Usuários:** usuário.
 
 **Processamentos**
 
-- **R.F 04 - Devolução do Livro:** O sistema deve permitir verificar se há atrasos após a devolução.
+- **R.F 03 - Devolução do Livro:** O sistema deve permitir verificar se há atrasos após a devolução.
   - **Dados Necessários:** nenhum
   - **Usuários:** bibliotecário.
 
-- **R.F 05 - Empréstimo do Livro:** O sistema deve permitir verificar se há pendências para a validação de empréstimos.
-  - **Dados Necessários:** Nome completo, e-mail, Telefone, CPF, Endereço.
-  - **Usuários:** bibliotecário.
-
-- **R.F 06 - Catalogação Diária de Livros:** O sistema deve permitir que o bibliotecário faça atualizações dos livros (re)adicionados ao acervo literário no dia.
-  - **Dados Necessários:** Nome/Login, senha.
+- **R.F 04 - Empréstimo do Livro:** O sistema deve permitir verificar se há pendências para a validação de empréstimos.
+  - **Dados Necessários:** Nome completo, e-mail, CPF.
   - **Usuários:** bibliotecário.
 
 **Saída**
 
-- **R.F 07: Relatório de Empréstimo:** O sistema deve permitir emitir os relatórios de empréstimos de livros e quantidade emprestada.
+- **R.F 05: Relatório de Empréstimo:** O sistema deve permitir emitir os relatórios de empréstimos de livros e quantidade emprestada.
   - **Dados Necessários:** data inicial, data final 
   - **Usuários:** bibliotecário
 
-- **R.F 08: Relatório de Empréstimos Atrasados:** O sistema deve permitir emitir os relatórios de empréstimos de livros atrasados e quantidade emprestada,  
+- **R.F 06: Relatório de Empréstimos Atrasados:** O sistema deve permitir emitir os relatórios de empréstimos de livros atrasados e quantidade emprestada,  
   - **Dados Necessários:** data inicial, data final. 
   - **Usuários:** bibliotecário.
 
-- **R.F 09: Relatório de Clientes:** O sistema deve permitir emitir os relatórios dos usuários, fazendo a verificação das pendências para a validação de empréstimos.
+- **R.F 07: Relatório de Clientes:** O sistema deve permitir emitir os relatórios dos usuários, fazendo a verificação das pendências para a validação de empréstimos.
   - **Dados Necessários:** Nome completo.
   - **Usuários:** bibliotecário.
 
