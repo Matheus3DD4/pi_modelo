@@ -47,8 +47,8 @@ A BPP não oferece esses serviços como: empréstimo de materiais, renovação d
 **Processamentos**
 
 - **R.F 03 - Devolução do Livro:** O sistema deve permitir verificar se há atrasos após a devolução.
-  - **Dados Necessários:** nenhum
-  - **Usuários:** bibliotecário.
+  - **Dados Necessários:** login, senha.
+  - **Usuários:** usuário.
 
 - **R.F 04 - Empréstimo do Livro:** O sistema deve permitir verificar se há pendências para a validação de empréstimos.
   - **Dados Necessários:** Nome completo, e-mail, CPF.
@@ -62,10 +62,6 @@ A BPP não oferece esses serviços como: empréstimo de materiais, renovação d
 
 - **R.F 06: Relatório de Empréstimos Atrasados:** O sistema deve permitir emitir os relatórios de empréstimos de livros atrasados e quantidade emprestada,  
   - **Dados Necessários:** data inicial, data final. 
-  - **Usuários:** bibliotecário.
-
-- **R.F 07: Relatório de Clientes:** O sistema deve permitir emitir os relatórios dos usuários, fazendo a verificação das pendências para a validação de empréstimos.
-  - **Dados Necessários:** Nome completo.
   - **Usuários:** bibliotecário.
 
 # Requisitos não funcionais
